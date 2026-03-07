@@ -1,15 +1,18 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en" class="h-full">
- <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>A Letter to You</title>
-  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
-  <script src="/_sdk/element_sdk.js"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&amp;family=Dancing+Script:wght@400;700&amp;family=Quicksand:wght@300;400;500&amp;display=swap" rel="stylesheet">
-  <style>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A Letter to You</title>
+    <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+    <script src="/_sdk/element_sdk.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&amp;family=Dancing+Script:wght@400;700&amp;family=Quicksand:wght@300;400;500&amp;display=swap"
+      rel="stylesheet"
+    />
+    <style>
       html,
       body {
         height: 100%;
@@ -236,209 +239,651 @@
         background: linear-gradient(90deg, var(--color-primary), transparent);
       }
     </style>
-  <style>body { box-sizing: border-box; }</style>
-  <script src="/_sdk/data_sdk.js" type="text/javascript"></script>
- </head>
- <body class="h-full font-body" style="background-color: var(--color-bg); color: var(--color-text)">
-  <div id="app-wrapper" class="w-full h-full overflow-auto"><!-- Floating Decorations -->
-   <div class="fixed inset-0 pointer-events-none overflow-hidden z-0"><!-- Hearts -->
-    <svg class="absolute top-20 left-10 w-8 h-8 float-element opacity-20" viewbox="0 0 24 24" fill="var(--color-primary)"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
-    </svg>
-    <svg class="absolute top-40 right-20 w-6 h-6 float-element float-delay-1 opacity-15" viewbox="0 0 24 24" fill="var(--color-secondary)"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
-    </svg>
-    <svg class="absolute bottom-40 left-20 w-10 h-10 float-element float-delay-2 opacity-10" viewbox="0 0 24 24" fill="var(--color-primary)"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
-    </svg><!-- Petals -->
-    <div class="petal top-32 right-32" style="transform: rotate(45deg)"></div>
-    <div class="petal top-60 left-40" style="transform: rotate(-30deg); animation-delay: 1s"></div>
-    <div class="petal bottom-60 right-40" style="transform: rotate(120deg); animation-delay: 2s"></div><!-- Sparkles -->
-    <div class="absolute top-1/4 left-1/4 w-2 h-2 bg-yellow-200 rounded-full sparkle" style="animation-delay: 0.5s"></div>
-    <div class="absolute top-1/3 right-1/3 w-1.5 h-1.5 bg-pink-200 rounded-full sparkle" style="animation-delay: 1.5s"></div>
-    <div class="absolute bottom-1/4 left-1/3 w-2 h-2 bg-rose-200 rounded-full sparkle" style="animation-delay: 2.5s"></div>
-   </div><!-- Hero Section -->
-   <section id="hero" class="relative min-h-screen flex items-center justify-center px-6 py-20">
-    <div class="absolute inset-0 overflow-hidden">
-     <div class="absolute top-0 left-0 w-96 h-96 bg-gradient-to-br from-pink-200/30 to-transparent rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2"></div>
-     <div class="absolute bottom-0 right-0 w-80 h-80 bg-gradient-to-tl from-rose-200/30 to-transparent rounded-full blur-3xl translate-x-1/3 translate-y-1/3"></div>
-    </div>
-    <div class="relative z-10 text-center max-w-3xl fade-in-up">
-     <div class="mb-6">
-      <svg class="w-16 h-16 mx-auto heartbeat" viewbox="0 0 24 24" fill="var(--color-primary)"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
-      </svg>
-     </div>
-     <h1 id="hero-title" class="font-script text-5xl md:text-7xl gradient-text mb-6 leading-tight">Terima Kasih Karena Sudah Hadir Di Hatiku</h1>
-     <div class="decorative-line w-32 mx-auto mb-8"></div>
-     <p id="hero-subtitle" class="font-elegant text-xl md:text-2xl italic leading-relaxed opacity-80">Setiap moment sama kamu ngebuat aku sadar bahwa ga semua hal yang aku pikirin tentang wanita itu sama, kamu beda dari yang lain, menurutku kamu spesial.</p>
-     <div class="mt-12"><a href="#about" class="inline-flex items-center gap-2 text-sm tracking-widest uppercase opacity-60 hover:opacity-100 transition-opacity"> <span>SCROLL BUPP</span>
-       <svg class="w-4 h-4 animate-bounce" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
-       </svg></a>
-     </div>
-    </div>
-   </section><!-- About Her Section -->
-   <section id="about" class="relative py-24 px-6">
-    <div class="max-w-4xl mx-auto section-animate">
-     <div class="section-divider">
-      <svg class="w-6 h-6" viewbox="0 0 24 24" fill="var(--color-primary)"><path d="M12 2L9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2z" />
-      </svg>
-     </div>
-     <h2 id="about-title" class="font-script text-4xl md:text-5xl text-center gradient-text mb-12">CHAPTER I</h2>
-     <div class="flex flex-col lg:flex-row items-center gap-12"><!-- Photo Frame -->
-      <div class="flex-shrink-0">
-       <div class="photo-frame p-4 rounded-2xl rotate-2 hover:rotate-0 transition-transform duration-500"><img src="https://via.placeholder.com/288x384/fce4ec/f48fb1?text=Foto+Kamu" alt="Foto spesial untukmu" class="photo-img w-64 h-80 md:w-72 md:h-96 rounded-xl" loading="lazy" onerror="console.error('Gambar gagal dimuat:', this.src); this.style.background='linear-gradient(135deg, #fce4ec 0%, #f8bbd9 50%, #f48fb1 100%)'; this.alt='Tempat foto dirimu';">
-       </div>
-      </div><!-- Description -->
-      <div class="flex-1 text-center lg:text-left">
-       <p id="about-description" class="font-elegant text-lg md:text-xl leading-relaxed mb-6">Bener ya ternyata setiap kita kehilangan sesuatu pasti ada gantinya, kalau sesuatu yang sama, sesuatu yang sama namun ada bedanya, atau sesuatu yang lebih, dan bener sekarang aku dapat yang lebih</p>
-       <p class="font-body text-base leading-relaxed opacity-70">Cuman kamu satu satunya orang yang mau nunggu aku, dengan sabar pas aku butuh waktu, kamu rela ngorbanin kepastiaan kamu demi aku, mau nungguin aku, padahal aku sendiri ga tau kapan harus mulai, aku bingung saat itu apakah aku pantas buat kamu?.</p>
+    <style>
+      body {
+        box-sizing: border-box;
+      }
+    </style>
+    <script src="/_sdk/data_sdk.js" type="text/javascript"></script>
+  </head>
+  <body
+    class="h-full font-body"
+    style="background-color: var(--color-bg); color: var(--color-text)"
+  >
+    <div id="app-wrapper" class="w-full h-full overflow-auto">
+      <!-- Floating Decorations -->
+      <div class="fixed inset-0 pointer-events-none overflow-hidden z-0">
+        <!-- Hearts -->
+        <svg
+          class="absolute top-20 left-10 w-8 h-8 float-element opacity-20"
+          viewbox="0 0 24 24"
+          fill="var(--color-primary)"
+        >
+          <path
+            d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+          />
+        </svg>
+        <svg
+          class="absolute top-40 right-20 w-6 h-6 float-element float-delay-1 opacity-15"
+          viewbox="0 0 24 24"
+          fill="var(--color-secondary)"
+        >
+          <path
+            d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+          />
+        </svg>
+        <svg
+          class="absolute bottom-40 left-20 w-10 h-10 float-element float-delay-2 opacity-10"
+          viewbox="0 0 24 24"
+          fill="var(--color-primary)"
+        >
+          <path
+            d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+          /></svg
+        ><!-- Petals -->
+        <div
+          class="petal top-32 right-32"
+          style="transform: rotate(45deg)"
+        ></div>
+        <div
+          class="petal top-60 left-40"
+          style="transform: rotate(-30deg); animation-delay: 1s"
+        ></div>
+        <div
+          class="petal bottom-60 right-40"
+          style="transform: rotate(120deg); animation-delay: 2s"
+        ></div>
+        <!-- Sparkles -->
+        <div
+          class="absolute top-1/4 left-1/4 w-2 h-2 bg-yellow-200 rounded-full sparkle"
+          style="animation-delay: 0.5s"
+        ></div>
+        <div
+          class="absolute top-1/3 right-1/3 w-1.5 h-1.5 bg-pink-200 rounded-full sparkle"
+          style="animation-delay: 1.5s"
+        ></div>
+        <div
+          class="absolute bottom-1/4 left-1/3 w-2 h-2 bg-rose-200 rounded-full sparkle"
+          style="animation-delay: 2.5s"
+        ></div>
       </div>
-     </div>
-    </div>
-   </section><!-- Memories Together Section -->
-   <section id="memories" class="py-24 px-6" style="
+      <!-- Hero Section -->
+      <section
+        id="hero"
+        class="relative min-h-screen flex items-center justify-center px-6 py-20"
+      >
+        <div class="absolute inset-0 overflow-hidden">
+          <div
+            class="absolute top-0 left-0 w-96 h-96 bg-gradient-to-br from-pink-200/30 to-transparent rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2"
+          ></div>
+          <div
+            class="absolute bottom-0 right-0 w-80 h-80 bg-gradient-to-tl from-rose-200/30 to-transparent rounded-full blur-3xl translate-x-1/3 translate-y-1/3"
+          ></div>
+        </div>
+        <div class="relative z-10 text-center max-w-3xl fade-in-up">
+          <div class="mb-6">
+            <svg
+              class="w-16 h-16 mx-auto heartbeat"
+              viewbox="0 0 24 24"
+              fill="var(--color-primary)"
+            >
+              <path
+                d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+              />
+            </svg>
+          </div>
+          <h1
+            id="hero-title"
+            class="font-script text-5xl md:text-7xl gradient-text mb-6 leading-tight"
+          >
+            Terima Kasih Karena Sudah Hadir Di Hatiku
+          </h1>
+          <div class="decorative-line w-32 mx-auto mb-8"></div>
+          <p
+            id="hero-subtitle"
+            class="font-elegant text-xl md:text-2xl italic leading-relaxed opacity-80"
+          >
+            Setiap moment sama kamu ngebuat aku sadar bahwa ga semua hal yang
+            aku pikirin tentang wanita itu sama, kamu beda dari yang lain,
+            menurutku kamu spesial.
+          </p>
+          <div class="mt-12">
+            <a
+              href="#about"
+              class="inline-flex items-center gap-2 text-sm tracking-widest uppercase opacity-60 hover:opacity-100 transition-opacity"
+            >
+              <span>SCROLL BUPP</span>
+              <svg
+                class="w-4 h-4 animate-bounce"
+                fill="none"
+                stroke="currentColor"
+                viewbox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M19 14l-7 7m0 0l-7-7m7 7V3"
+                /></svg
+            ></a>
+          </div>
+        </div>
+      </section>
+      <!-- About Her Section -->
+      <section id="about" class="relative py-24 px-6">
+        <div class="max-w-4xl mx-auto section-animate">
+          <div class="section-divider">
+            <svg
+              class="w-6 h-6"
+              viewbox="0 0 24 24"
+              fill="var(--color-primary)"
+            >
+              <path
+                d="M12 2L9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2z"
+              />
+            </svg>
+          </div>
+          <h2
+            id="about-title"
+            class="font-script text-4xl md:text-5xl text-center gradient-text mb-12"
+          >
+            CHAPTER I
+          </h2>
+          <div class="flex flex-col lg:flex-row items-center gap-12">
+            <!-- Photo Frame -->
+            <div class="flex-shrink-0">
+              <div
+                class="photo-frame p-4 rounded-2xl rotate-2 hover:rotate-0 transition-transform duration-500"
+              >
+                <img
+                  id="main-photo"
+                  src="FOTO 2.jpg"
+                  alt="Foto spesial untukmu"
+                  class="photo-img w-64 h-80 md:w-72 md:h-96 rounded-xl"
+                  loading="lazy"
+                  onerror="console.error('Gambar gagal dimuat:', this.src); this.style.background='linear-gradient(135deg, #fce4ec 0%, #f8bbd9 50%, #f48fb1 100%)'; this.alt='Tempat foto dirimu';"
+                />
+              </div>
+            </div>
+            <!-- Description -->
+            <div class="flex-1 text-center lg:text-left">
+              <p
+                id="about-description"
+                class="font-elegant text-lg md:text-xl leading-relaxed mb-6"
+              >
+                Bener ya ternyata setiap kita kehilangan sesuatu pasti ada
+                gantinya, kalau sesuatu yang sama, sesuatu yang sama namun ada
+                bedanya, atau sesuatu yang lebih, dan bener sekarang aku dapat
+                yang lebih
+              </p>
+              <p class="font-body text-base leading-relaxed opacity-70">
+                Cuman kamu satu satunya orang yang mau nunggu aku, dengan sabar
+                pas aku butuh waktu, kamu rela ngorbanin kepastiaan kamu demi
+                aku, mau nungguin aku, padahal aku sendiri ga tau kapan harus
+                mulai, aku bingung saat itu apakah aku pantas buat kamu?.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Memories Together Section -->
+      <section
+        id="memories"
+        class="py-24 px-6"
+        style="
           background: linear-gradient(
             180deg,
             var(--color-bg) 0%,
             #fef0f5 50%,
             var(--color-bg) 100%
           );
-        ">
-    <div class="max-w-6xl mx-auto section-animate">
-     <div class="section-divider">
-      <svg class="w-6 h-6" viewbox="0 0 24 24" fill="var(--color-primary)"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
-      </svg>
-     </div>
-     <h2 id="memories-title" class="font-script text-4xl md:text-5xl text-center gradient-text mb-4">CHAPTER II</h2>
-     <p class="text-center font-elegant text-lg italic opacity-70 mb-16">faktanya aku berhasil ngeyakinin diri aku buat buka hati lagi</p><!-- Gallery Grid -->
-     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"><!-- Memory 1 -->
-      <div class="gallery-item photo-frame p-3 rounded-2xl"><img src="https://via.placeholder.com/400/fce4ec/f48fb1?text=bucket+favorit" alt="bucket favorit akuuu" class="photo-img w-full aspect-square rounded-xl" loading="lazy" onerror="console.error('Gambar gagal dimuat:', this.src); this.style.background='linear-gradient(135deg, #fce4ec 0%, #f8bbd9 50%, #f48fb1 100%)'; this.alt='Foto kenangan';">
-       <p class="font-elegant text-center mt-4 italic text-sm opacity-80">bucket favorit akuuu</p>
-      </div><!-- Memory 2 -->
-      <div class="gallery-item photo-frame p-3 rounded-2xl"><img src="https://via.placeholder.com/400/fce4ec/f48fb1?text=sekolah+sekolah" alt="sekolah sekolah" class="photo-img w-full aspect-square rounded-xl" loading="lazy" onerror="console.error('Gambar gagal dimuat:', this.src); this.style.background='linear-gradient(135deg, #fce4ec 0%, #f8bbd9 50%, #f48fb1 100%)'; this.alt='Foto kenangan';">
-       <p class="font-elegant text-center mt-4 italic text-sm opacity-80">sekolah sekolah</p>
-      </div><!-- Memory 3 -->
-      <div class="gallery-item photo-frame p-3 rounded-2xl"><img src="https://via.placeholder.com/400/fce4ec/f48fb1?text=Video+Call" alt="Video call terlucuuuu" class="photo-img w-full aspect-square rounded-xl" loading="lazy" onerror="console.error('Gambar gagal dimuat:', this.src); this.style.background='linear-gradient(135deg, #fce4ec 0%, #f8bbd9 50%, #f48fb1 100%)'; this.alt='Foto kenangan';">
-       <p class="font-elegant text-center mt-4 italic text-sm opacity-80">Video call terlucuuuu</p>
-      </div><!-- Memory 4 -->
-      <div class="gallery-item photo-frame p-3 rounded-2xl"><img src="https://via.placeholder.com/400/fce4ec/f48fb1?text=Kaca+Mata" alt="Kaca mata holiccc" class="photo-img w-full aspect-square rounded-xl" loading="lazy" onerror="console.error('Gambar gagal dimuat:', this.src); this.style.background='linear-gradient(135deg, #fce4ec 0%, #f8bbd9 50%, #f48fb1 100%)'; this.alt='Foto kenangan';">
-       <p class="font-elegant text-center mt-4 italic text-sm opacity-80">Kaca mata holiccc</p>
-      </div><!-- Memory 5 -->
-      <div class="gallery-item photo-frame p-3 rounded-2xl"><img src="https://via.placeholder.com/400/fce4ec/f48fb1?text=Anak+Rajin" alt="ANAKK RAJINN" class="photo-img w-full aspect-square rounded-xl" loading="lazy" onerror="console.error('Gambar gagal dimuat:', this.src); this.style.background='linear-gradient(135deg, #fce4ec 0%, #f8bbd9 50%, #f48fb1 100%)'; this.alt='Foto kenangan';">
-       <p class="font-elegant text-center mt-4 italic text-sm opacity-80">ANAKK RAJINN</p>
-      </div><!-- Memory 6 -->
-      <div class="gallery-item photo-frame p-3 rounded-2xl"><img src="https://via.placeholder.com/400/fce4ec/f48fb1?text=Fineshytt" alt="FINESHYTT GUEEEE" class="photo-img w-full aspect-square rounded-xl" loading="lazy" onerror="console.error('Gambar gagal dimuat:', this.src); this.style.background='linear-gradient(135deg, #fce4ec 0%, #f8bbd9 50%, #f48fb1 100%)'; this.alt='Foto kenangan';">
-       <p class="font-elegant text-center mt-4 italic text-sm opacity-80">FINESHYTT GUEEEE</p>
-      </div>
-     </div>
-    </div>
-   </section><!-- Childhood Photos Section -->
-   <section id="childhood" class="py-24 px-6">
-    <div class="max-w-4xl mx-auto section-animate">
-     <div class="section-divider">
-      <svg class="w-6 h-6" viewbox="0 0 24 24" fill="var(--color-primary)"><path d="M12 3c-4.97 0-9 4.03-9 9s4.03 9 9 9c.83 0 1.5-.67 1.5-1.5 0-.39-.15-.74-.39-1.01-.23-.26-.38-.61-.38-.99 0-.83.67-1.5 1.5-1.5H16c2.76 0 5-2.24 5-5 0-4.42-4.03-8-9-8zm-5.5 9c-.83 0-1.5-.67-1.5-1.5S5.67 9 6.5 9 8 9.67 8 10.5 7.33 12 6.5 12zm3-4C8.67 8 8 7.33 8 6.5S8.67 5 9.5 5s1.5.67 1.5 1.5S10.33 8 9.5 8zm5 0c-.83 0-1.5-.67-1.5-1.5S13.67 5 14.5 5s1.5.67 1.5 1.5S15.33 8 14.5 8zm3 4c-.83 0-1.5-.67-1.5-1.5S16.67 9 17.5 9s1.5.67 1.5 1.5-.67 1.5-1.5 1.5z" />
-      </svg>
-     </div>
-     <h2 id="childhood-title" class="font-script text-4xl md:text-5xl text-center gradient-text mb-4">Anak siapa nich luucuu</h2>
-     <p class="text-center font-elegant text-lg italic opacity-70 mb-16">Dari kecil sampe sekarang, kamu tetap manis ya</p>
-     <div class="flex flex-col md:flex-row items-center justify-center gap-8"><!-- Childhood Photo 1 -->
-      <div class="gallery-item photo-frame p-3 rounded-2xl -rotate-3 hover:rotate-0 transition-transform"><img src="https://via.placeholder.com/224x256/fce4ec/f48fb1?text=tk+imutt" alt="tk imutt nyoooo" class="photo-img w-56 h-64 rounded-xl" loading="lazy" onerror="console.error('Gambar gagal dimuat:', this.src); this.style.background='linear-gradient(135deg, #fce4ec 0%, #f8bbd9 50%, #f48fb1 100%)'; this.alt='Foto masa kecil';">
-       <p class="font-elegant text-center mt-3 italic text-xs opacity-70">tk imutt nyoooo</p>
-      </div><!-- Childhood Photo 2 -->
-      <div class="gallery-item photo-frame p-3 rounded-2xl rotate-2 hover:rotate-0 transition-transform"><img src="https://via.placeholder.com/224x256/fce4ec/f48fb1?text=pak+rt" alt="anak pak rt jangan di senggol" class="photo-img w-56 h-64 rounded-xl" loading="lazy" onerror="console.error('Gambar gagal dimuat:', this.src); this.style.background='linear-gradient(135deg, #fce4ec 0%, #f8bbd9 50%, #f48fb1 100%)'; this.alt='Foto masa kecil';">
-       <p class="font-elegant text-center mt-3 italic text-xs opacity-70">anak pak rt jangan di senggol</p>
-      </div>
-     </div>
-     <div class="text-center mt-12">
-      <p class="font-elegant text-lg md:text-xl italic opacity-80 max-w-2xl mx-auto">Dari foto-foto ini, aku Sadar ternyata di pas kamu kecil pun, kamu punya sifat yang pemberani, walaupun tampangnya kayak galak di dalam diri kamu ada anak kecil imutt inii</p>
-     </div>
-    </div>
-   </section><!-- Thank You Section -->
-   <section id="thankyou" class="py-24 px-6" style="
-          background: linear-gradient(180deg, var(--color-bg) 0%, #fef0f5 100%);
-        ">
-    <div class="max-w-3xl mx-auto section-animate">
-     <div class="section-divider">
-      <svg class="w-6 h-6" viewbox="0 0 24 24" fill="var(--color-primary)"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
-      </svg>
-     </div>
-     <h2 id="thankyou-title" class="font-script text-4xl md:text-5xl text-center gradient-text mb-12">Terima Kasih, Sayangkuuuu</h2>
-     <div class="photo-frame p-8 md:p-12 rounded-3xl text-center">
-      <svg class="w-12 h-12 mx-auto mb-6 opacity-30" viewbox="0 0 24 24" fill="var(--color-primary)"><path d="M6 17h3l2-4V7H5v6h3zm8 0h3l2-4V7h-6v6h3z" />
-      </svg>
-      <p class="font-elegant text-lg md:text-xl leading-relaxed mb-6">Terima kasih untuk setiap hal yang kamu usahain buat aku, setiap cerita yang di dengar, setiap tawa yang kamu buat. Terima kasih banyak karena memilih untuk menunggu, memilih untuk mencintai, memilih aku sebagai orangnya.</p>
-      <p class="font-elegant text-lg md:text-xl leading-relaxed mb-6">Terima kasih atas kesabaran saat aku ngeselin, atas pengertian saat aku lagi cape, atas cintamu kamu pas aku ngerasa gak layak. Kamu udah ngasih aku lebih dari yang bisa diungkapkan dengan kata-kata kamu telah memberikan aku rumah dalam hatimu.</p>
-      <p class="font-elegant text-lg md:text-xl leading-relaxed">Setiap kenangan yang telah kita ciptakan bersama adalah hal yang aku simpan dan jaga. Kamu adalah alasan aku percaya pada diriku, alasan aku menunggu malam, dan alasan kenyamananku.</p>
-      <svg class="w-12 h-12 mx-auto mt-6 opacity-30 rotate-180" viewbox="0 0 24 24" fill="var(--color-primary)"><path d="M6 17h3l2-4V7H5v6h3zm8 0h3l2-4V7h-6v6h3z" />
-      </svg>
-     </div>
-    </div>
-   </section><!-- Apology Section -->
-   <section id="apology" class="py-24 px-6" style="
-          background: linear-gradient(180deg, #fef0f5 0%, var(--color-bg) 100%);
-        ">
-    <div class="max-w-3xl mx-auto section-animate">
-     <div class="section-divider">
-      <svg class="w-6 h-6" viewbox="0 0 24 24" fill="var(--color-secondary)"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
-      </svg>
-     </div>
-     <h2 id="apology-title" class="font-script text-4xl md:text-5xl text-center gradient-text mb-12">Maafinn akuu ya buuppp</h2>
-     <div class="photo-frame p-8 md:p-12 rounded-3xl" style="background: linear-gradient(145deg, #fff, #fef7f9)">
-      <div class="text-center mb-8">
-       <svg class="w-16 h-16 mx-auto opacity-40" viewbox="0 0 24 24" fill="var(--color-secondary)"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z" />
-       </svg>
-      </div>
-      <p class="font-elegant text-lg md:text-xl leading-relaxed mb-6 text-center">Aku tahu aku gak selalu sesuai kayak yang kamu mau. udah ada momen pas kata kataku nyakitin kamu, pas perilaku aku ngecewain kamu, ketika aku gagal menjadi orang yang kamu mau.</p>
-      <p class="font-elegant text-lg md:text-xl leading-relaxed mb-6 text-center">Aku minta maaf untuk setiap kali aku ngebuat kamu nangis, untuk setiap kali pas aku gak ada pas kamu butuh aku, untuk setiap kali aku biarin ego yang saling kuat di antara kita. Setiap momen aku menyebabkan rasa sakit buat kamu.</p>
-      <p class="font-elegant text-lg md:text-xl leading-relaxed mb-6 text-center">Aku minta maaf atas kekurangannya aku, kesalahan aku, dan momen-momen ketiduran. tapi aku ingin kamu tahu aku lagi belajar, aku lagi tumbuh, dan aku berusaha setiap hari menjadi orang yang lebih baik buat kamu, dan untuk kita.</p>
-      <p class="font-body text-base text-center opacity-70 mt-8">maafin aku yaa. cintaku untukmu lebih besar dari kesalahan apa pun yang pernah aku buat.</p>
-     </div>
-    </div>
-   </section><!-- Hope Section -->
-   <section id="hope" class="py-24 px-6">
-    <div class="max-w-3xl mx-auto section-animate">
-     <div class="section-divider">
-      <svg class="w-6 h-6" viewbox="0 0 24 24" fill="var(--color-primary)"><path d="M12 2L9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2z" />
-      </svg>
-     </div>
-     <h2 id="hope-title" class="font-script text-4xl md:text-5xl text-center gradient-text mb-12">harapanku untuk Kita</h2>
-     <div class="relative"><!-- Decorative elements -->
-      <div class="absolute -top-8 -left-8 w-24 h-24 bg-gradient-to-br from-pink-100 to-transparent rounded-full blur-2xl opacity-60"></div>
-      <div class="absolute -bottom-8 -right-8 w-32 h-32 bg-gradient-to-tl from-rose-100 to-transparent rounded-full blur-2xl opacity-60"></div>
-      <div class="photo-frame p-8 md:p-12 rounded-3xl relative">
-       <div class="space-y-6">
-        <p class="font-elegant text-lg md:text-xl leading-relaxed">Aku harap kita ga saling ninggiin ego pas berantem ya, ga selalu maunya di mengerti terus.</p>
-        <p class="font-elegant text-lg md:text-xl leading-relaxed">Aku juga berharap juga supaya kita gak lagi nahan hal yang mau di omongin gak ngehapus chat kalau kita bad mood.</p>
-        <p class="font-elegant text-lg md:text-xl leading-relaxed">Aku juga harap kamu bisa mulai tidak berkata kata kasar lagi ehhehe</p>
-        <div class="text-center pt-6">
-         <p class="font-script text-2xl gradient-text">Selamanya, selalu, bersama.</p>
+        "
+      >
+        <div class="max-w-6xl mx-auto section-animate">
+          <div class="section-divider">
+            <svg
+              class="w-6 h-6"
+              viewbox="0 0 24 24"
+              fill="var(--color-primary)"
+            >
+              <path
+                d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+              />
+            </svg>
+          </div>
+          <h2
+            id="memories-title"
+            class="font-script text-4xl md:text-5xl text-center gradient-text mb-4"
+          >
+            CHAPTER II
+          </h2>
+          <p class="text-center font-elegant text-lg italic opacity-70 mb-16">
+            faktanya aku berhasil ngeyakinin diri aku buat buka hati lagi
+          </p>
+          <!-- Gallery Grid -->
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Memory 1 -->
+            <div class="gallery-item photo-frame p-3 rounded-2xl">
+              <img
+                id="memory-1"
+                src="SATE.jpg"
+                alt="bucket favorit akuuu"
+                class="photo-img w-full aspect-square rounded-xl"
+                loading="lazy"
+                onerror="console.error('Gambar gagal dimuat:', this.src); this.style.background='linear-gradient(135deg, #fce4ec 0%, #f8bbd9 50%, #f48fb1 100%)'; this.alt='Foto kenangan';"
+              />
+              <p
+                class="font-elegant text-center mt-4 italic text-sm opacity-80"
+              >
+                bucket favorit akuuu
+              </p>
+            </div>
+            <!-- Memory 2 -->
+            <div class="gallery-item photo-frame p-3 rounded-2xl">
+              <img
+                id="memory-2"
+                src="FOTO 6.jpg"
+                alt="sekolah sekolah"
+                class="photo-img w-full aspect-square rounded-xl"
+                loading="lazy"
+                onerror="console.error('Gambar gagal dimuat:', this.src); this.style.background='linear-gradient(135deg, #fce4ec 0%, #f8bbd9 50%, #f48fb1 100%)'; this.alt='Foto kenangan';"
+              />
+              <p
+                class="font-elegant text-center mt-4 italic text-sm opacity-80"
+              >
+                sekolah sekolah
+              </p>
+            </div>
+            <!-- Memory 3 -->
+            <div class="gallery-item photo-frame p-3 rounded-2xl">
+              <img
+                id="memory-3"
+                src="FOTO 3.jpeg"
+                alt="Video call terlucuuuu"
+                class="photo-img w-full aspect-square rounded-xl"
+                loading="lazy"
+                onerror="console.error('Gambar gagal dimuat:', this.src); this.style.background='linear-gradient(135deg, #fce4ec 0%, #f8bbd9 50%, #f48fb1 100%)'; this.alt='Foto kenangan';"
+              />
+              <p
+                class="font-elegant text-center mt-4 italic text-sm opacity-80"
+              >
+                Video call terlucuuuu
+              </p>
+            </div>
+            <!-- Memory 4 -->
+            <div class="gallery-item photo-frame p-3 rounded-2xl">
+              <img
+                id="memory-4"
+                src="FOTO 1.jpg"
+                alt="Kaca mata holiccc"
+                class="photo-img w-full aspect-square rounded-xl"
+                loading="lazy"
+                onerror="console.error('Gambar gagal dimuat:', this.src); this.style.background='linear-gradient(135deg, #fce4ec 0%, #f8bbd9 50%, #f48fb1 100%)'; this.alt='Foto kenangan';"
+              />
+              <p
+                class="font-elegant text-center mt-4 italic text-sm opacity-80"
+              >
+                Kaca mata holiccc
+              </p>
+            </div>
+            <!-- Memory 5 -->
+            <div class="gallery-item photo-frame p-3 rounded-2xl">
+              <img
+                id="memory-5"
+                src="FOTO 7.jpg"
+                alt="ANAKK RAJINN"
+                class="photo-img w-full aspect-square rounded-xl"
+                loading="lazy"
+                onerror="console.error('Gambar gagal dimuat:', this.src); this.style.background='linear-gradient(135deg, #fce4ec 0%, #f8bbd9 50%, #f48fb1 100%)'; this.alt='Foto kenangan';"
+              />
+              <p
+                class="font-elegant text-center mt-4 italic text-sm opacity-80"
+              >
+                ANAKK RAJINN
+              </p>
+            </div>
+            <!-- Memory 6 -->
+            <div class="gallery-item photo-frame p-3 rounded-2xl">
+              <img
+                id="memory-6"
+                src="FINE.JPG"
+                alt="FINESHYTT GUEEEE"
+                class="photo-img w-full aspect-square rounded-xl"
+                loading="lazy"
+                onerror="console.error('Gambar gagal dimuat:', this.src); this.style.background='linear-gradient(135deg, #fce4ec 0%, #f8bbd9 50%, #f48fb1 100%)'; this.alt='Foto kenangan';"
+              />
+              <p
+                class="font-elegant text-center mt-4 italic text-sm opacity-80"
+              >
+                FINESHYTT GUEEEE
+              </p>
+            </div>
+          </div>
         </div>
-       </div>
-      </div>
-     </div>
-    </div>
-   </section><!-- Closing Section -->
-   <section id="closing" class="py-24 px-6" style="
+      </section>
+      <!-- Childhood Photos Section -->
+      <section id="childhood" class="py-24 px-6">
+        <div class="max-w-4xl mx-auto section-animate">
+          <div class="section-divider">
+            <svg
+              class="w-6 h-6"
+              viewbox="0 0 24 24"
+              fill="var(--color-primary)"
+            >
+              <path
+                d="M12 3c-4.97 0-9 4.03-9 9s4.03 9 9 9c.83 0 1.5-.67 1.5-1.5 0-.39-.15-.74-.39-1.01-.23-.26-.38-.61-.38-.99 0-.83.67-1.5 1.5-1.5H16c2.76 0 5-2.24 5-5 0-4.42-4.03-8-9-8zm-5.5 9c-.83 0-1.5-.67-1.5-1.5S5.67 9 6.5 9 8 9.67 8 10.5 7.33 12 6.5 12zm3-4C8.67 8 8 7.33 8 6.5S8.67 5 9.5 5s1.5.67 1.5 1.5S10.33 8 9.5 8zm5 0c-.83 0-1.5-.67-1.5-1.5S13.67 5 14.5 5s1.5.67 1.5 1.5S15.33 8 14.5 8zm3 4c-.83 0-1.5-.67-1.5-1.5S16.67 9 17.5 9s1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"
+              />
+            </svg>
+          </div>
+          <h2
+            id="childhood-title"
+            class="font-script text-4xl md:text-5xl text-center gradient-text mb-4"
+          >
+            Anak siapa nich luucuu
+          </h2>
+          <p class="text-center font-elegant text-lg italic opacity-70 mb-16">
+            Dari kecil sampe sekarang, kamu tetap manis ya
+          </p>
+          <div
+            class="flex flex-col md:flex-row items-center justify-center gap-8"
+          >
+            <!-- Childhood Photo 1 -->
+            <div
+              class="gallery-item photo-frame p-3 rounded-2xl -rotate-3 hover:rotate-0 transition-transform"
+            >
+              <img
+                id="childhood-1"
+                src="FOTO 8.jpg"
+                alt="tk imutt nyoooo"
+                class="photo-img w-56 h-64 rounded-xl"
+                loading="lazy"
+                onerror="console.error('Gambar gagal dimuat:', this.src); this.style.background='linear-gradient(135deg, #fce4ec 0%, #f8bbd9 50%, #f48fb1 100%)'; this.alt='Foto masa kecil';"
+              />
+              <p
+                class="font-elegant text-center mt-3 italic text-xs opacity-70"
+              >
+                tk imutt nyoooo
+              </p>
+            </div>
+            <!-- Childhood Photo 2 -->
+            <div
+              class="gallery-item photo-frame p-3 rounded-2xl rotate-2 hover:rotate-0 transition-transform"
+            >
+              <img
+                id="childhood-2"
+                src="TAHU.jpg"
+                alt="anak pak rt jangan di senggol"
+                class="photo-img w-56 h-64 rounded-xl"
+                loading="lazy"
+                onerror="console.error('Gambar gagal dimuat:', this.src); this.style.background='linear-gradient(135deg, #fce4ec 0%, #f8bbd9 50%, #f48fb1 100%)'; this.alt='Foto masa kecil';"
+              />
+              <p
+                class="font-elegant text-center mt-3 italic text-xs opacity-70"
+              >
+                anak pak rt jangan di senggol
+              </p>
+            </div>
+          </div>
+          <div class="text-center mt-12">
+            <p
+              class="font-elegant text-lg md:text-xl italic opacity-80 max-w-2xl mx-auto"
+            >
+              Dari foto-foto ini, aku Sadar ternyata di pas kamu kecil pun, kamu
+              punya sifat yang pemberani, walaupun tampangnya kayak galak di
+              dalam diri kamu ada anak kecil imutt inii
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- Thank You Section -->
+      <section
+        id="thankyou"
+        class="py-24 px-6"
+        style="
           background: linear-gradient(180deg, var(--color-bg) 0%, #fef0f5 100%);
-        ">
-    <div class="max-w-2xl mx-auto section-animate text-center">
-     <div class="mb-12">
-      <svg class="w-20 h-20 mx-auto heartbeat" viewbox="0 0 24 24" fill="var(--color-primary)"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
-      </svg>
-     </div>
-     <p id="closing-message" class="font-script text-3xl md:text-4xl gradient-text mb-8">My Love For You</p>
-     <div class="decorative-line w-24 mx-auto mb-8"></div>
-     <p class="font-elegant text-xl md:text-2xl italic leading-relaxed mb-8 opacity-80">singkat tapi Terima kasih telah milih aku. Terima kasih telah menjadi milikku.</p>
-     <p class="font-elegant text-lg mb-12 opacity-60">Dengan penuh cinta kaisar, sekarang dan selamanya</p><button id="thank-btn" class="btn-romantic px-8 py-4 rounded-full text-white font-body tracking-wide inline-flex items-center gap-3"> <span>Terima kasih udah baca ampee akhirr</span>
-      <svg class="w-5 h-5" viewbox="0 0 24 24" fill="currentColor"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
-      </svg></button>
-     <div id="thank-message" class="mt-8 opacity-0 transition-opacity duration-500">
-      <p class="font-script text-2xl gradient-text">i love u so much ❤️</p>
-     </div>
+        "
+      >
+        <div class="max-w-3xl mx-auto section-animate">
+          <div class="section-divider">
+            <svg
+              class="w-6 h-6"
+              viewbox="0 0 24 24"
+              fill="var(--color-primary)"
+            >
+              <path
+                d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+              />
+            </svg>
+          </div>
+          <h2
+            id="thankyou-title"
+            class="font-script text-4xl md:text-5xl text-center gradient-text mb-12"
+          >
+            Terima Kasih, Sayangkuuuu
+          </h2>
+          <div class="photo-frame p-8 md:p-12 rounded-3xl text-center">
+            <svg
+              class="w-12 h-12 mx-auto mb-6 opacity-30"
+              viewbox="0 0 24 24"
+              fill="var(--color-primary)"
+            >
+              <path d="M6 17h3l2-4V7H5v6h3zm8 0h3l2-4V7h-6v6h3z" />
+            </svg>
+            <p class="font-elegant text-lg md:text-xl leading-relaxed mb-6">
+              Terima kasih untuk setiap hal yang kamu usahain buat aku, setiap
+              cerita yang di dengar, setiap tawa yang kamu buat. Terima kasih
+              banyak karena memilih untuk menunggu, memilih untuk mencintai,
+              memilih aku sebagai orangnya.
+            </p>
+            <p class="font-elegant text-lg md:text-xl leading-relaxed mb-6">
+              Terima kasih atas kesabaran saat aku ngeselin, atas pengertian
+              saat aku lagi cape, atas cintamu kamu pas aku ngerasa gak layak.
+              Kamu udah ngasih aku lebih dari yang bisa diungkapkan dengan
+              kata-kata kamu telah memberikan aku rumah dalam hatimu.
+            </p>
+            <p class="font-elegant text-lg md:text-xl leading-relaxed">
+              Setiap kenangan yang telah kita ciptakan bersama adalah hal yang
+              aku simpan dan jaga. Kamu adalah alasan aku percaya pada diriku,
+              alasan aku menunggu malam, dan alasan kenyamananku.
+            </p>
+            <svg
+              class="w-12 h-12 mx-auto mt-6 opacity-30 rotate-180"
+              viewbox="0 0 24 24"
+              fill="var(--color-primary)"
+            >
+              <path d="M6 17h3l2-4V7H5v6h3zm8 0h3l2-4V7h-6v6h3z" />
+            </svg>
+          </div>
+        </div>
+      </section>
+      <!-- Apology Section -->
+      <section
+        id="apology"
+        class="py-24 px-6"
+        style="
+          background: linear-gradient(180deg, #fef0f5 0%, var(--color-bg) 100%);
+        "
+      >
+        <div class="max-w-3xl mx-auto section-animate">
+          <div class="section-divider">
+            <svg
+              class="w-6 h-6"
+              viewbox="0 0 24 24"
+              fill="var(--color-secondary)"
+            >
+              <path
+                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
+              />
+            </svg>
+          </div>
+          <h2
+            id="apology-title"
+            class="font-script text-4xl md:text-5xl text-center gradient-text mb-12"
+          >
+            Maafinn akuu ya buuppp
+          </h2>
+          <div
+            class="photo-frame p-8 md:p-12 rounded-3xl"
+            style="background: linear-gradient(145deg, #fff, #fef7f9)"
+          >
+            <div class="text-center mb-8">
+              <svg
+                class="w-16 h-16 mx-auto opacity-40"
+                viewbox="0 0 24 24"
+                fill="var(--color-secondary)"
+              >
+                <path
+                  d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"
+                />
+              </svg>
+            </div>
+            <p
+              class="font-elegant text-lg md:text-xl leading-relaxed mb-6 text-center"
+            >
+              Aku tahu aku gak selalu sesuai kayak yang kamu mau. udah ada momen
+              pas kata kataku nyakitin kamu, pas perilaku aku ngecewain kamu,
+              ketika aku gagal menjadi orang yang kamu mau.
+            </p>
+            <p
+              class="font-elegant text-lg md:text-xl leading-relaxed mb-6 text-center"
+            >
+              Aku minta maaf untuk setiap kali aku ngebuat kamu nangis, untuk
+              setiap kali pas aku gak ada pas kamu butuh aku, untuk setiap kali
+              aku biarin ego yang saling kuat di antara kita. Setiap momen aku
+              menyebabkan rasa sakit buat kamu.
+            </p>
+            <p
+              class="font-elegant text-lg md:text-xl leading-relaxed mb-6 text-center"
+            >
+              Aku minta maaf atas kekurangannya aku, kesalahan aku, dan
+              momen-momen ketiduran. tapi aku ingin kamu tahu aku lagi belajar,
+              aku lagi tumbuh, dan aku berusaha setiap hari menjadi orang yang
+              lebih baik buat kamu, dan untuk kita.
+            </p>
+            <p class="font-body text-base text-center opacity-70 mt-8">
+              maafin aku yaa. cintaku untukmu lebih besar dari kesalahan apa pun
+              yang pernah aku buat.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- Hope Section -->
+      <section id="hope" class="py-24 px-6">
+        <div class="max-w-3xl mx-auto section-animate">
+          <div class="section-divider">
+            <svg
+              class="w-6 h-6"
+              viewbox="0 0 24 24"
+              fill="var(--color-primary)"
+            >
+              <path
+                d="M12 2L9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2z"
+              />
+            </svg>
+          </div>
+          <h2
+            id="hope-title"
+            class="font-script text-4xl md:text-5xl text-center gradient-text mb-12"
+          >
+            harapanku untuk Kita
+          </h2>
+          <div class="relative">
+            <!-- Decorative elements -->
+            <div
+              class="absolute -top-8 -left-8 w-24 h-24 bg-gradient-to-br from-pink-100 to-transparent rounded-full blur-2xl opacity-60"
+            ></div>
+            <div
+              class="absolute -bottom-8 -right-8 w-32 h-32 bg-gradient-to-tl from-rose-100 to-transparent rounded-full blur-2xl opacity-60"
+            ></div>
+            <div class="photo-frame p-8 md:p-12 rounded-3xl relative">
+              <div class="space-y-6">
+                <p class="font-elegant text-lg md:text-xl leading-relaxed">
+                  Aku harap kita ga saling ninggiin ego pas berantem ya, ga
+                  selalu maunya di mengerti terus.
+                </p>
+                <p class="font-elegant text-lg md:text-xl leading-relaxed">
+                  Aku juga berharap juga supaya kita gak lagi nahan hal yang mau
+                  di omongin gak ngehapus chat kalau kita bad mood.
+                </p>
+                <p class="font-elegant text-lg md:text-xl leading-relaxed">
+                  Aku juga harap kamu bisa mulai tidak berkata kata kasar lagi
+                  ehhehe
+                </p>
+                <div class="text-center pt-6">
+                  <p class="font-script text-2xl gradient-text">
+                    Selamanya, selalu, bersama.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Closing Section -->
+      <section
+        id="closing"
+        class="py-24 px-6"
+        style="
+          background: linear-gradient(180deg, var(--color-bg) 0%, #fef0f5 100%);
+        "
+      >
+        <div class="max-w-2xl mx-auto section-animate text-center">
+          <div class="mb-12">
+            <svg
+              class="w-20 h-20 mx-auto heartbeat"
+              viewbox="0 0 24 24"
+              fill="var(--color-primary)"
+            >
+              <path
+                d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+              />
+            </svg>
+          </div>
+          <p
+            id="closing-message"
+            class="font-script text-3xl md:text-4xl gradient-text mb-8"
+          >
+            My Love For You
+          </p>
+          <div class="decorative-line w-24 mx-auto mb-8"></div>
+          <p
+            class="font-elegant text-xl md:text-2xl italic leading-relaxed mb-8 opacity-80"
+          >
+            singkat tapi Terima kasih telah milih aku. Terima kasih telah
+            menjadi milikku.
+          </p>
+          <p class="font-elegant text-lg mb-12 opacity-60">
+            Dengan penuh cinta kaisar, sekarang dan selamanya
+          </p>
+          <button
+            id="thank-btn"
+            class="btn-romantic px-8 py-4 rounded-full text-white font-body tracking-wide inline-flex items-center gap-3"
+          >
+            <span>Terima kasih udah baca ampee akhirr</span>
+            <svg class="w-5 h-5" viewbox="0 0 24 24" fill="currentColor">
+              <path
+                d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+              />
+            </svg>
+          </button>
+          <div
+            id="thank-message"
+            class="mt-8 opacity-0 transition-opacity duration-500"
+          >
+            <p class="font-script text-2xl gradient-text">
+              i love u so much ❤️
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- Footer -->
+      <footer class="py-8 px-6 text-center">
+        <p class="font-elegant text-sm opacity-50">
+          Dibuat dengan cinta, hanya untuk dirimu
+        </p>
+      </footer>
     </div>
-   </section><!-- Footer -->
-   <footer class="py-8 px-6 text-center">
-    <p class="font-elegant text-sm opacity-50">Dibuat dengan cinta, hanya untuk dirimu</p>
-   </footer>
-  </div>
-  <script>
+    <script>
       const defaultConfig = {
         hero_title: "Terima Kasih Karena Ada di Hidupku",
         hero_subtitle:
@@ -457,6 +902,24 @@
         text_color: "#5C4A5A",
         primary_color: "#E8A0B5",
         secondary_color: "#D4A5A5",
+        main_photo:
+          "https://via.placeholder.com/288x384/fce4ec/f48fb1?text=Foto+Kamu",
+        memory_1_photo:
+          "https://via.placeholder.com/400/fce4ec/f48fb1?text=bucket+favorit",
+        memory_2_photo:
+          "https://via.placeholder.com/400/fce4ec/f48fb1?text=sekolah+sekolah",
+        memory_3_photo:
+          "https://via.placeholder.com/400/fce4ec/f48fb1?text=Video+Call",
+        memory_4_photo:
+          "https://via.placeholder.com/400/fce4ec/f48fb1?text=Kaca+Mata",
+        memory_5_photo:
+          "https://via.placeholder.com/400/fce4ec/f48fb1?text=Anak+Rajin",
+        memory_6_photo:
+          "https://via.placeholder.com/400/fce4ec/f48fb1?text=Fineshytt",
+        childhood_1_photo:
+          "https://via.placeholder.com/224x256/fce4ec/f48fb1?text=tk+imutt",
+        childhood_2_photo:
+          "https://via.placeholder.com/224x256/fce4ec/f48fb1?text=pak+rt",
       };
 
       // Intersection Observer for scroll animations
@@ -559,6 +1022,26 @@
           config.hope_title || defaultConfig.hope_title;
         document.getElementById("closing-message").textContent =
           config.closing_message || defaultConfig.closing_message;
+
+        // Update photo sources
+        document.getElementById("main-photo").src =
+          config.main_photo || defaultConfig.main_photo;
+        document.getElementById("memory-1").src =
+          config.memory_1_photo || defaultConfig.memory_1_photo;
+        document.getElementById("memory-2").src =
+          config.memory_2_photo || defaultConfig.memory_2_photo;
+        document.getElementById("memory-3").src =
+          config.memory_3_photo || defaultConfig.memory_3_photo;
+        document.getElementById("memory-4").src =
+          config.memory_4_photo || defaultConfig.memory_4_photo;
+        document.getElementById("memory-5").src =
+          config.memory_5_photo || defaultConfig.memory_5_photo;
+        document.getElementById("memory-6").src =
+          config.memory_6_photo || defaultConfig.memory_6_photo;
+        document.getElementById("childhood-1").src =
+          config.childhood_1_photo || defaultConfig.childhood_1_photo;
+        document.getElementById("childhood-2").src =
+          config.childhood_2_photo || defaultConfig.childhood_2_photo;
       }
 
       function mapToCapabilities(config) {
@@ -615,6 +1098,39 @@
             "hero_subtitle",
             config.hero_subtitle || defaultConfig.hero_subtitle,
           ],
+          ["main_photo", config.main_photo || defaultConfig.main_photo],
+          [
+            "memory_1_photo",
+            config.memory_1_photo || defaultConfig.memory_1_photo,
+          ],
+          [
+            "memory_2_photo",
+            config.memory_2_photo || defaultConfig.memory_2_photo,
+          ],
+          [
+            "memory_3_photo",
+            config.memory_3_photo || defaultConfig.memory_3_photo,
+          ],
+          [
+            "memory_4_photo",
+            config.memory_4_photo || defaultConfig.memory_4_photo,
+          ],
+          [
+            "memory_5_photo",
+            config.memory_5_photo || defaultConfig.memory_5_photo,
+          ],
+          [
+            "memory_6_photo",
+            config.memory_6_photo || defaultConfig.memory_6_photo,
+          ],
+          [
+            "childhood_1_photo",
+            config.childhood_1_photo || defaultConfig.childhood_1_photo,
+          ],
+          [
+            "childhood_2_photo",
+            config.childhood_2_photo || defaultConfig.childhood_2_photo,
+          ],
           ["about_title", config.about_title || defaultConfig.about_title],
           [
             "about_description",
@@ -653,5 +1169,40 @@
         });
       }
     </script>
- <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9d8c332f72424ac7',t:'MTc3MjkxMzc2OS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+    <script>
+      (function () {
+        function c() {
+          var b = a.contentDocument || a.contentWindow.document;
+          if (b) {
+            var d = b.createElement("script");
+            d.innerHTML =
+              "window.__CF$cv$params={r:'9d8c3a3441734ac7',t:'MTc3MjkxNDA1Ny4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";
+            b.getElementsByTagName("head")[0].appendChild(d);
+          }
+        }
+        if (document.body) {
+          var a = document.createElement("iframe");
+          a.height = 1;
+          a.width = 1;
+          a.style.position = "absolute";
+          a.style.top = 0;
+          a.style.left = 0;
+          a.style.border = "none";
+          a.style.visibility = "hidden";
+          document.body.appendChild(a);
+          if ("loading" !== document.readyState) c();
+          else if (window.addEventListener)
+            document.addEventListener("DOMContentLoaded", c);
+          else {
+            var e = document.onreadystatechange || function () {};
+            document.onreadystatechange = function (b) {
+              e(b);
+              "loading" !== document.readyState &&
+                ((document.onreadystatechange = e), c());
+            };
+          }
+        }
+      })();
+    </script>
+  </body>
 </html>
